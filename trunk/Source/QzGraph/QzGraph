@@ -1,0 +1,2 @@
+#include "QzGraphGlobal.h"
+#include "QzGraph.h"

@@ -1,0 +1,10 @@
+#ifndef QZGRAPHGLOBAL_H
+#define QZGRAPHGLOBAL_H
+
+#ifdef QZGRAPH_LIB
+# define QZGRAPH_EXPORT Q_DECL_EXPORT
+#else
+# define QZGRAPH_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QZGRAPHGLOBAL_H
