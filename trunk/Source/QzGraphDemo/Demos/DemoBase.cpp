@@ -7,7 +7,6 @@ DemoBase::DemoBase(const QString &path, const QString &description) : QStandardI
   this->description = description;
 
   graph = new QzGraph();
-  graph->setText(path);
 
   setEditable(false);
   setToolTip(description);
