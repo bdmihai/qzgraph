@@ -1,2 +1,3 @@
 #include "QzGraphGlobal.h"
 #include "QzGraph.h"
+#include "Data/QzPointPairList.h"

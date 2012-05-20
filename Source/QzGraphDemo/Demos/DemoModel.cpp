@@ -33,6 +33,7 @@ void DemoModel::createDemoNode(DemoBase *demo, QStandardItem *parent, const QStr
     QString nodeName = path.left(path.indexOf("/"));
     QStandardItem *newItem = new QStandardItem(nodeName);
     newItem->setSelectable(false);
+    newItem->setEditable(false);
     parent->appendRow(newItem);
     createDemoNode(demo, newItem, path.right(path.length() - path.indexOf("/") - 1));
   }

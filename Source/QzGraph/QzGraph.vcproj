@@ -39,7 +39,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="&quot;.\GeneratedFiles&quot;;&quot;$(QTDIR)\include&quot;;&quot;.\GeneratedFiles\$(ConfigurationName)&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;.\&quot;"
+				AdditionalIncludeDirectories="&quot;.\GeneratedFiles&quot;;&quot;$(QTDIR)\include&quot;;&quot;.\GeneratedFiles\$(ConfigurationName)&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;.\&quot;;&quot;.\Pane&quot;;&quot;.\Text&quot;;&quot;.\Grid&quot;;&quot;.\Data&quot;;&quot;.\Items&quot;"
 				PreprocessorDefinitions=",UNICODE,WIN32,QT_LARGEFILE_SUPPORT;QT_NO_DEBUG,NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QZGRAPH_LIB"
 				RuntimeLibrary="2"
 				TreatWChar_tAsBuiltInType="false"
@@ -111,7 +111,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;.\GeneratedFiles&quot;;&quot;$(QTDIR)\include&quot;;&quot;.\GeneratedFiles\$(ConfigurationName)&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;.\&quot;"
+				AdditionalIncludeDirectories="&quot;.\GeneratedFiles&quot;;&quot;$(QTDIR)\include&quot;;&quot;.\GeneratedFiles\$(ConfigurationName)&quot;;&quot;$(QTDIR)\include\QtCore&quot;;&quot;$(QTDIR)\include\QtGui&quot;;&quot;.\&quot;;&quot;.\Pane&quot;;&quot;.\Text&quot;;&quot;.\Grid&quot;;&quot;.\Data&quot;;&quot;.\Items&quot;"
 				PreprocessorDefinitions=",UNICODE,WIN32,QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QZGRAPH_LIB"
 				RuntimeLibrary="3"
 				TreatWChar_tAsBuiltInType="false"
@@ -169,7 +169,67 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\Grid\QzAxis.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzAxisLabel.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzCurveItem.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzCurveList.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzGapLabel.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\QzGraph.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzGraphPane.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzLabel.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzLineItem.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzMasterPane.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzPaneBase.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPair.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPairBase.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPairList.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Grid\QzXAxis.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Grid\QzYAxis.cpp"
 				>
 			</File>
 			<File
@@ -201,6 +261,46 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath=".\Grid\QzAxis.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzAxisLabel.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzAxisLabelPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Grid\QzAxisPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzCurveItem.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzCurveItemPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzCurveList.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzCurveListPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzGapLabel.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzGapLabelPrivate.h"
+				>
+			</File>
+			<File
 				RelativePath=".\QzGraph.h"
 				>
 				<FileConfiguration
@@ -209,7 +309,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing QzGraph.h..."
-						CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\$(ConfigurationName)\moc_$(InputName).cpp&quot; &quot;-fStable.h&quot; &quot;-f../../QzGraph.h&quot;  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQZGRAPH_LIB -D_WINDLL &quot;-I.\GeneratedFiles&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\$(ConfigurationName)\.&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I.&quot;&#x0D;&#x0A;"
+						CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQZGRAPH_LIB -D_WINDLL  &quot;-I.\GeneratedFiles&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\$(ConfigurationName)\.&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I.&quot; &quot;-I.\Pane&quot; &quot;-I.\Text&quot; &quot;-I.\Grid&quot; &quot;-I.\Data&quot; &quot;-I.\Items&quot; &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\$(ConfigurationName)\moc_$(InputName).cpp&quot; &quot;-fStable.h&quot; &quot;-f../../QzGraph.h&quot;&#x0D;&#x0A;"
 						AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)"
 						Outputs="&quot;.\GeneratedFiles\$(ConfigurationName)\moc_$(InputName).cpp&quot;"
 					/>
@@ -220,7 +320,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Moc&apos;ing QzGraph.h..."
-						CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;  &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\$(ConfigurationName)\moc_$(InputName).cpp&quot; &quot;-fStable.h&quot; &quot;-f../../QzGraph.h&quot;  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQZGRAPH_LIB -D_WINDLL &quot;-I.\GeneratedFiles&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\$(ConfigurationName)\.&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I.&quot;&#x0D;&#x0A;"
+						CommandLine="&quot;$(QTDIR)\bin\moc.exe&quot;   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQZGRAPH_LIB -D_WINDLL  &quot;-I.\GeneratedFiles&quot; &quot;-I$(QTDIR)\include&quot; &quot;-I.\GeneratedFiles\$(ConfigurationName)\.&quot; &quot;-I$(QTDIR)\include\QtCore&quot; &quot;-I$(QTDIR)\include\QtGui&quot; &quot;-I.&quot; &quot;-I.\Pane&quot; &quot;-I.\Text&quot; &quot;-I.\Grid&quot; &quot;-I.\Data&quot; &quot;-I.\Items&quot; &quot;$(InputPath)&quot; -o &quot;.\GeneratedFiles\$(ConfigurationName)\moc_$(InputName).cpp&quot; &quot;-fStable.h&quot; &quot;-f../../QzGraph.h&quot;&#x0D;&#x0A;"
 						AdditionalDependencies="&quot;$(QTDIR)\bin\moc.exe&quot;;$(InputPath)"
 						Outputs="&quot;.\GeneratedFiles\$(ConfigurationName)\moc_$(InputName).cpp&quot;"
 					/>
@@ -228,6 +328,94 @@
 			</File>
 			<File
 				RelativePath=".\QzGraphGlobal.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzGraphPane.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzGraphPanePrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\QzGraphPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzLabel.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Text\QzLabelPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzLineItem.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Items\QzLineItemPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzMasterPane.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzMasterPanePrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzPaneBase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Pane\QzPaneBasePrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPair.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPairBase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPairBasePrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPairList.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPairListPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Data\QzPointPairPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\QzTypes.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Grid\QzXAxis.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Grid\QzXAxisPrivate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Grid\QzYAxis.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Grid\QzYAxisPrivate.h"
 				>
 			</File>
 			<File
